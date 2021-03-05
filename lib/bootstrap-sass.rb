@@ -1,5 +1,5 @@
 require 'bootstrap-sass/version'
-module Bootstrap
+module BootstrapSass
   class << self
     # Inspired by Kaminari
     def load!
@@ -65,7 +65,7 @@ module Bootstrap
     def register_compass_extension
       ::Compass::Frameworks.register(
           'bootstrap',
-          :version               => Bootstrap::VERSION,
+          :version               => BootstrapSass::VERSION,
           :path                  => gem_path,
           :stylesheets_directory => stylesheets_path,
           :templates_directory   => File.join(gem_path, 'templates')
@@ -88,4 +88,4 @@ module Bootstrap
   end
 end
 
-Bootstrap.load!
+BootstrapSass.load!

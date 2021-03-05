@@ -1,4 +1,4 @@
-module Bootstrap
+module BootstrapSass
   module Rails
     class Engine < ::Rails::Engine
       initializer 'bootstrap-sass.assets.precompile' do |app|
